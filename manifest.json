@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Telegram Message Logger",
+  "version": "1.0.0",
+  "description": "Console logs latest Telegram messages",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://parser.kyna.one/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://web.telegram.org/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
