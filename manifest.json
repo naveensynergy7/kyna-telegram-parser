@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Telegram Message Logger",
+  "name": "Kyna Telegram Parser",
   "version": "1.0.0",
-  "description": "Console logs latest Telegram messages",
+  "description": "Automatically extracts and parses Telegram messages with user profiles to Kyna API",
   "permissions": [
     "storage"
   ],
