@@ -23,6 +23,8 @@ async function sendToAPI(messageData) {
       contactUrl: messageData.profileUrl || null
     };
     
+    console.log('📦 API Payload:', JSON.stringify(payload, null, 2));
+    
     const response = await fetch(API_URL, {
       method: 'POST',
       headers: {

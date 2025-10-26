@@ -174,7 +174,9 @@ async function logMessage(bubbleGroup) {
     console.log('👤 Sender:', sender);
     console.log('🔗 Profile URL:', profileUrl || 'N/A');
     console.log('🕐 Time:', timeDisplay);
-    console.log('💬 Message:', message);
+    console.log('💬 Message (with line breaks):');
+    console.log(message); // Log as-is to show line breaks
+    console.log('📋 Message (escaped):', JSON.stringify(message)); // Show escaped version
     console.log('🆔 Message ID:', messageId);
     console.log('⏱️ Timestamp:', timestamp);
     console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
